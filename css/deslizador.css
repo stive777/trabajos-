@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.deslizador {
+	width: 800px;
+	height: 600px;
+	margin: auto;
+    overflow: hidden;
+    border: solid rgba(182, 0, 0, 0.315) 5px;
+}
+
+.deslizador ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 10s infinite alternate linear;
+}
+
+.deslizador li {
+	width: 100%;
+	list-style: none;
+}
+
+.deslizador img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
